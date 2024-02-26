@@ -2,16 +2,16 @@ import React from "react"
 
 
 
-export default function Dados(){
+export default function Dados(props){
 
 return (
 
     <>
     
     <section>
-        <p>Nome de Série:</p>
-        <p>Episódios:</p>
-        <p>Canal:</p>
+        <p>Nome:{props.nome}</p>
+        <p>Episódios:{props.episodio}</p>
+        <p>Canal:{props.canal}</p>
     </section>
     
     </>

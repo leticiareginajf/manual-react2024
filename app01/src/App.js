@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './componentes/Header'
 import Corpo from './componentes/Corpo'
-import Dados from './componentes/Dados'
+
 //import Logo from './componentes/imgs/boruto crianca.png'
 //import Borutoadulto from './componentes/imgs/Boruto adulto.png'
 
@@ -12,7 +12,6 @@ export default function App() {
     <>
     <Header/>
     <Corpo/>
-    <Dados/>
     </>
   
   )
