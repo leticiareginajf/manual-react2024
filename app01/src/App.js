@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './componentes/Header'
 import Corpo from './componentes/Corpo'
+import Relogio from './componentes/Relogio'
 
 //import Logo from './componentes/imgs/boruto crianca.png'
 //import Borutoadulto from './componentes/imgs/Boruto adulto.png'
@@ -13,8 +14,11 @@ export default function App() {
     <section className='caixa'>
     <Header/>
     <Corpo/>
+    <Relogio/>
     <a href='https://youtube.com' target='_blank'>Clique Aqui</a>
     </section>
+
+    
     </>
   
   )
