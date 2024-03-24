@@ -1,31 +1,35 @@
-import React from 'react'
-import Header from './componentes/Header'
+import React, {useState} from 'react'
+import Numero from './componentes/Numero'
+/*import Header from './componentes/Header'
 import Corpo from './componentes/Corpo'
-import Relogio from './componentes/Relogio'
+import Relogio from './componentes/Relogio'*/
 
 //import Logo from './componentes/imgs/boruto crianca.png'
 //import Borutoadulto from './componentes/imgs/Boruto adulto.png'
 
 export default function App() {
 
-  return (
+  const [num, setNum] = useState(10)
+  const [nome, setNome] = useState('Leticia')
 
+  return (
     <>
+      <p> Valor do state num em App: {num}</p>
+      <Numero num={num}  setNum={setNum}/>
+      <p>{nome}</p>
+    </>
+  
+  )
+}
+
+ /*<>
     <section className='caixa'>
     <Header/>
     <Corpo/>
     <Relogio/>
     <a href='https://youtube.com' target='_blank'>Clique Aqui</a>
     </section>
-
-    
-    </>
-  
-  )
-
-
-}
-
+    </>*/
 
 /*const canal = 'React - 2024'
 const curso = '2024'
