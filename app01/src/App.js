@@ -22,7 +22,7 @@ export default function App() {
     <>
     
     <img style={{width: '50px'}} src={ligado?LedVerde:LedVermelho}></img>
-    <button onClick={()=>setLigado(!ligado)}>Ligar/Desligar</button>
+    <button onClick={()=>setLigado(!ligado)}>{ligado?'Desligar':'Ligar'}</button>
     
     </>
     
