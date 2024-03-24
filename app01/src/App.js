@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import Numero from './componentes/Numero'
+import LedVerde from './componentes/imgs/botaoverde.jpg'
+import LedVermelho from './componentes/imgs/botaovermelho.jpg'
 /*import Header from './componentes/Header'
 import Corpo from './componentes/Corpo'
 import Relogio from './componentes/Relogio'*/
@@ -9,20 +11,33 @@ import Relogio from './componentes/Relogio'*/
 
 export default function App() {
 
-  const [num, setNum] = useState(10)
-  const [nome, setNome] = useState('Leticia')
+  /*const [num, setNum] = useState(10)
+  const [nome, setNome] = useState('Leticia')*/
+
+
+  const [ligado, setLigado] = useState(false)
 
   return (
+
     <>
-      <p> Valor do state num em App: {num}</p>
-      <Numero num={num}  setNum={setNum}/>
-      <p>{nome}</p>
+    
+    <img style={{width: '50px'}} src={ligado?LedVerde:LedVermelho}></img>
+    <button onClick={()=>setLigado(!ligado)}>Ligar/Desligar</button>
+    
     </>
+    
   
   )
 }
 
  /*<>
+
+    <>
+      <p> Valor do state num em App: {num}</p>
+      <Numero num={num}  setNum={setNum}/>
+      <p>{nome}</p>
+    </>
+
     <section className='caixa'>
     <Header/>
     <Corpo/>
