@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import Numero from './componentes/Numero'
+import Led from './componentes/Led'
+/*import Numero from './componentes/Numero'
 import LedVerde from './componentes/imgs/botaoverde.jpg'
 import LedVermelho from './componentes/imgs/botaovermelho.jpg'
-/*import Header from './componentes/Header'
+import Header from './componentes/Header'
 import Corpo from './componentes/Corpo'
 import Relogio from './componentes/Relogio'*/
-
 //import Logo from './componentes/imgs/boruto crianca.png'
 //import Borutoadulto from './componentes/imgs/Boruto adulto.png'
 
@@ -20,10 +20,7 @@ export default function App() {
   return (
 
     <>
-    
-    <img style={{width: '50px'}} src={ligado?LedVerde:LedVermelho}></img>
-    <button onClick={()=>setLigado(!ligado)}>{ligado?'Desligar':'Ligar'}</button>
-    
+      <Led ligado={ligado} setLigado={setLigado}/>
     </>
     
   
