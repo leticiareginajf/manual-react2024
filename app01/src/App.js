@@ -17,10 +17,18 @@ export default function App() {
 
   const [ligado, setLigado] = useState(false)
 
+  const cancelar =(obj)=>{
+    //return false
+    return obj.preventDefault()
+  }
+
+
+
   return (
 
     <>
       <Led ligado={ligado} setLigado={setLigado}/>
+      <a href='https://facebook.com' target='_blannk' onClick={(e)=>cancelar(e)}>Lute isso!</a>
     </>
     
   
